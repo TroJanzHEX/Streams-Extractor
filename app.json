@@ -1,0 +1,45 @@
+{
+    "name": "Subtitle Translate Bot",
+    "description": "A Bot that can Translate Subtitles into 100+ different Languages using Google Cloud Translate API",
+    "logo": "https://telegra.ph/file/71aaa621508cd696ab538.jpg",
+    "keywords": [
+        "Subtitle",
+        "Translator",
+        "Google Translate API",
+        "Telegram Bot",
+        "TroJanzHEX"
+    ],
+    "website": "https://TroJanzHEX.me",
+    "repository": "https://github.com/TroJanzHEX/Subtitle-Translator",
+    "success_url": "https://telegram.dog/TroJanzHEX",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "WEBHOOK": {
+            "description": "Set this Value to 'ANYTHING'. Don't Change it.",
+            "value": "ANYTHING"
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
