@@ -1,6 +1,7 @@
 # By @TroJanzHEX
 
 class Script(object):
+
     START_MSG = """<b>Hello {},
 
 I'm a Subtitle Tranlsator Bot which Supports 100+ Languages using Google Translate API.
@@ -11,6 +12,7 @@ See <i>/help</i> for more details.
 
 © @TroJanzHEX</b>"""
 
+
     HELP_MSG = """<b>Hai, Follow these Steps..</b>
 
 🌀 <code>Send me any Valid SRT Subtitle file to Translate.</code>
@@ -20,6 +22,7 @@ See <i>/help</i> for more details.
 🌀 <code>Your Translated Subtitle will be Uploaded.</code>
 
 © @TroJanzHEX"""
+
 
     ABOUT_MSG = """⭕️<b>My Name : Subtitle Translator Bot</b>
 
