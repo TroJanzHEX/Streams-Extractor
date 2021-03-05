@@ -19,7 +19,9 @@ See <i>help</i> for more details.
 
 🌀 <i>Click Download and Process button to download the file to my server</i>
 
-🌀 <i>Wait till I process the video and select the stream you need to extract!</i>
+🌀 <i>Wait till I process the video!</i>
+
+🌀 <i>Now select the stream you need to extract!</i>
 
 <b>© @TroJanzHEX</b>"""
 
