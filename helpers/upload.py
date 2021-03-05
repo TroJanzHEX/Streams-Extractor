@@ -1,9 +1,13 @@
 import time
-from hachoir.metadata import extractMetadata
+
 from hachoir.parser import createParser
-from helpers.progress import progress_func
+from hachoir.metadata import extractMetadata
+
 from helpers.tools import clean_up
+from helpers.progress import progress_func
+
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 
 async def upload_audio(client, message, file_loc):
 
@@ -44,7 +48,7 @@ async def upload_audio(client, message, file_loc):
                 c_time,
                 client
             )
-        ) 
+        )
     except Exception as e:
         print(e)     
         await msg.edit_text("**Some Error Occurred. See Logs for More Info.**")   

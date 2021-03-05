@@ -1,16 +1,9 @@
-import os
-import pyrogram
-
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
-
-from script import Script
 from pyrogram import filters
 from pyrogram import Client as trojanz
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from pyrogram.errors import UserNotParticipant
+
+from config import Config
+from script import Script
 
 
 @trojanz.on_message(filters.private & (filters.document | filters.video))

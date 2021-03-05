@@ -1,7 +1,7 @@
 import os
 import shlex
 import asyncio
-from typing import Tuple, List, Optional
+from typing import Tuple
 
 
 async def execute(cmnd: str) -> Tuple[str, str, int, int]:

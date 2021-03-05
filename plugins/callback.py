@@ -1,19 +1,15 @@
-import os
-import pyrogram
 
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
-
-from script import Script
 from pyrogram import filters
 from pyrogram import Client as trojanz
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from helpers.download import download_file, DATA
+
+from config import Config
+from script import Script
+
 from helpers.progress import PRGRS
-from helpers.ffmpeg import extract_audio, extract_subtitle
 from helpers.tools import clean_up
+from helpers.download import download_file, DATA
+from helpers.ffmpeg import extract_audio, extract_subtitle
 
 
 @trojanz.on_callback_query()

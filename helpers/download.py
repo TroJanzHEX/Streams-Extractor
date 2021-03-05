@@ -1,5 +1,3 @@
-import os
-import pyrogram
 import time
 import json
 
@@ -18,8 +16,9 @@ async def download_file(client, message):
     msg = await client.send_message(
         chat_id=message.chat.id,
         text="**Downloading...**",
-        reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="Progress", callback_data="progress_msg")]]),
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton(text="Progress", callback_data="progress_msg")]
+        ]),
         reply_to_message_id=media.message_id
     )
     filetype = media.document or media.video
@@ -69,9 +68,15 @@ async def download_file(client, message):
             "lang" : lang,
             "location" : download_location
         }
-        buttons.append([InlineKeyboardButton(f"{stream_type.upper()} - {str(lang).upper()}", f"{stream_type}_{mapping}_{message.chat.id}-{msg.message_id}")])
+        buttons.append([
+            InlineKeyboardButton(
+                f"{stream_type.upper()} - {str(lang).upper()}", f"{stream_type}_{mapping}_{message.chat.id}-{msg.message_id}"
+            )
+        ])
 
-    buttons.append([InlineKeyboardButton("CANCEL",f"cancel_{mapping}_{message.chat.id}-{msg.message_id}")])    
+    buttons.append([
+        InlineKeyboardButton("CANCEL",f"cancel_{mapping}_{message.chat.id}-{msg.message_id}")
+    ])    
 
     await msg.edit_text(
         "**Select the Stream to be Extracted...**",

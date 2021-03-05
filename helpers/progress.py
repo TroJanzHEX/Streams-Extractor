@@ -1,15 +1,8 @@
-import math
 import os
 import time
-import asyncio
 
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
 
 PRGRS = {}
-
 
 async def progress_func(
     current,
