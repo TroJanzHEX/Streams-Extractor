@@ -20,7 +20,7 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("HELP", callback_data="help_data"),
                 InlineKeyboardButton("ABOUT", callback_data="about_data")],
-            [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TroJanzHEX/Subtitle-Translator")]
+            [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")]
         ])
 
         await query.message.edit_text(
@@ -36,7 +36,7 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("BACK", callback_data="start_data"),
                 InlineKeyboardButton("ABOUT", callback_data="about_data")],
-            [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TroJanzHEX/Subtitle-Translator")]
+            [InlineKeyboardButton("⭕️ SUPPORT ⭕️", url="https://t.me/TroJanzSupport")]
         ])
 
         await query.message.edit_text(
@@ -52,7 +52,7 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("BACK", callback_data="help_data"),
                 InlineKeyboardButton("START", callback_data="start_data")],
-            [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TroJanzHEX/Subtitle-Translator")]
+            [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TroJanzHEX/Streams-Extractor")]
         ])
 
         await query.message.edit_text(
@@ -80,7 +80,7 @@ async def cb_handler(client, query):
             )
         except:
             await query.answer(
-                "Processing...",
+                "Processing your file...",
                 show_alert=True
             )
 

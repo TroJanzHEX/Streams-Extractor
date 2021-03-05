@@ -4,30 +4,32 @@ class Script(object):
 
     START_MSG = """<b>Hello {},
 
-I'm a Subtitle Tranlsator Bot which Supports 100+ Languages using Google Translate API.
+I can extract audio and subtitles from video files.
 
-Send me any Subtitle file and Send Corresponding Language code of which your Subtitle should be Translated!.
+Send me any video file and extract what you want :).
 
-See <i>/help</i> for more details.
+See <i>help</i> for more details.
 
 © @TroJanzHEX</b>"""
 
 
     HELP_MSG = """<b>Hai, Follow these Steps..</b>
 
-🌀 <code>Send me any Valid SRT Subtitle file to Translate.</code>
+🌀 <i>Send me any Valid video file.</i>
 
-🌀 <code>Send the Corresponding Language code of which your Subtitle should be Translated</code>(<a href='https://telegra.ph/Supported-Languages-12-14-7'>Supported Languages</a>).
+🌀 <i>Click Download and Process button to download the file to my server</i>
 
-🌀 <code>Your Translated Subtitle will be Uploaded.</code>
+🌀 <i>Wait till I process the video and select the stream you need to extract!</i>
 
-© @TroJanzHEX"""
+<b>© @TroJanzHEX</b>"""
 
 
-    ABOUT_MSG = """⭕️<b>My Name : Subtitle Translator Bot</b>
+    ABOUT_MSG = """⭕️<b>My Name : Streams Extractor Bot</b>
+
+⭕️<b>Creater :</b> @TroJanzHEX    
 
 ⭕️<b>Language :</b> <code>Python3</code>
 
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
 
-⭕️<b>Source Code :</b> 👉 <a href='https://github.com/TroJanzHEX/Subtitle-Translator'>Click Here</a>"""
+"""

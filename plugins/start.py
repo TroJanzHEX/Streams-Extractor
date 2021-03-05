@@ -19,7 +19,7 @@ async def start(client, message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Subtitle-Translator")
+                        "⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")
                 ]
             ]
         ),
@@ -40,7 +40,7 @@ async def help(client, message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Subtitle-Translator")
+                        "⭕️ SUPPORT ⭕️", url="https://t.me/TroJanzSupport")
                 ]
             ]
         ),
@@ -61,7 +61,7 @@ async def about(client, message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Subtitle-Translator")
+                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Streams-Extractor")
                 ]
             ]
         ),

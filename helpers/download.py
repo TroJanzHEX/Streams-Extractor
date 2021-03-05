@@ -10,14 +10,14 @@ DATA = {}
 async def download_file(client, message):
     media = message.reply_to_message
     if media.empty:
-        await message.reply_text('Why did you delete that 😕', True)
+        await message.reply_text('Why did you delete that?? 😕', True)
         return
 
     msg = await client.send_message(
         chat_id=message.chat.id,
-        text="**Downloading...**",
+        text="**Downloading your file to server...**",
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(text="Progress", callback_data="progress_msg")]
+            [InlineKeyboardButton(text="Check Progress", callback_data="progress_msg")]
         ]),
         reply_to_message_id=media.message_id
     )
@@ -29,20 +29,20 @@ async def download_file(client, message):
         message=media,
         progress=progress_func,
         progress_args=(
-            "**Downloading...**",
+            "**Downloading your file to server...**",
             msg,
             c_time,
             client
         )
     )
 
-    await msg.edit_text("```Processing...```")
+    await msg.edit_text("Processing your file....")
 
     output = await execute(f"ffprobe -hide_banner -show_streams -print_format json '{download_location}'")
     
     if not output:
         await clean_up(download_location)
-        await msg.edit_text("```Some Error Occured while Fetching Details...```")
+        await msg.edit_text("Some Error Occured while Fetching Details...")
         return
 
     details = json.loads(output[0])

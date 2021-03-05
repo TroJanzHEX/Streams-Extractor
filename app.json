@@ -1,32 +1,27 @@
 {
-    "name": "Subtitle Translate Bot",
-    "description": "A Bot that can Translate Subtitles into 100+ different Languages using Google Cloud Translate API",
+    "name": "Streams Extractor Bot",
+    "description": "A bot to extract audio and subtitles from video files..",
     "logo": "https://telegra.ph/file/71aaa621508cd696ab538.jpg",
     "keywords": [
-        "Subtitle",
-        "Translator",
-        "Google Translate API",
+        "Streams",
+        "Extractor",
         "Telegram Bot",
         "TroJanzHEX"
     ],
     "website": "https://TroJanzHEX.me",
-    "repository": "https://github.com/TroJanzHEX/Subtitle-Translator",
+    "repository": "https://github.com/TroJanzHEX/Streams-Extractor",
     "success_url": "https://telegram.dog/TroJanzHEX",
     "env": {
-        "TG_BOT_TOKEN": {
+        "BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
         "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
+            "description": "Your API Hash from my.telegram.org or @UseTGXBot",
             "value": ""
         },
-        "WEBHOOK": {
-            "description": "Set this Value to 'ANYTHING'. Don't Change it.",
-            "value": "ANYTHING"
-        },
         "APP_ID": {
-            "description": "Your APP ID from my.telegram.org",
+            "description": "Your APP ID from my.telegram.org or @UseTGXBot",
             "value": ""
         }
     },
