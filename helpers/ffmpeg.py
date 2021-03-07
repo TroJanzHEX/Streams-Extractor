@@ -38,7 +38,7 @@ async def extract_subtitle(client, message, data):
     dwld_loc = data['location']
     out_loc = data['location'] + ".srt"   
 
-    out, err, rcode, pid = await execute(f"ffmpeg -i '{dwld_loc}' -map 0:{data['map']} -c copy '{out_loc}' -y")
+    out, err, rcode, pid = await execute(f"ffmpeg -i '{dwld_loc}' -map 0:{data['map']} '{out_loc}' -y")
     if rcode != 0:
         await message.edit_text("**Error Occured. See Logs for more info.**")
         print(err)
