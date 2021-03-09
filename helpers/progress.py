@@ -14,8 +14,7 @@ async def progress_func(
     total,
     ud_type,
     message,
-    start,
-    client
+    start
 ):
     now = time.time()
     diff = now - start
