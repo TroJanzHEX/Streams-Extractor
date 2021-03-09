@@ -50,8 +50,7 @@ async def upload_audio(client, message, file_loc):
             progress_args=(
                 "**Uploading extracted stream...**",
                 msg,
-                c_time,
-                client
+                c_time
             )
         )
     except Exception as e:
@@ -82,8 +81,7 @@ async def upload_subtitle(client, message, file_loc):
             progress_args=(
                 "**Uploading extracted subtitle...**",
                 msg,
-                c_time,
-                client
+                c_time
             )
         )
     except Exception as e:
