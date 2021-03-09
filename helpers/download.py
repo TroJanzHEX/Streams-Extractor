@@ -36,8 +36,7 @@ async def download_file(client, message):
         progress_args=(
             "**Downloading your file to server...**",
             msg,
-            c_time,
-            client
+            c_time
         )
     )
 
