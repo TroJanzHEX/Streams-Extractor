@@ -53,6 +53,7 @@ python3 main.py
 
 * API_HASH      - From my.telegram.org (or @UseTGXBot)
 
+* AUTH_USERS    - Get from @MissRose_bot by /id command
 
 ## Credits
 

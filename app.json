@@ -23,6 +23,10 @@
         "APP_ID": {
             "description": "Your APP ID from my.telegram.org or @UseTGXBot",
             "value": ""
+        },
+        "AUTH_USERS": {
+            "description": "Id of users that can use the bot, from @MissRose_bot by /id command",
+            "value": ""
         }
     },
     "addons": [],
