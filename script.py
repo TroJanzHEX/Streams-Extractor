@@ -29,7 +29,7 @@ See <i>help</i> for more details.
 <b>© @disneygrou</b>"""
 
 
-    ABOUT_MSG = """⭕️<b>My Name : Disney Team Streams Extractor Bot</b>
+    ABOUT_MSG = """🔥<b>My Name : Disney Team Streams Extractor Bot</b>
 
 👨‍💻<b>Creater :</b> [Doreamonfans1](https://t.me/doreamonfans1)  
 
